@@ -45,14 +45,14 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump osx)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -78,3 +78,37 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+export CLICOLOR=1
+export ANDROID_HOME=/Users/jacksgong/develop/environment/sdk
+#export ANDROID_NDK_HOME=/Users/jacksgong/develop/environment/ndk
+export ANT_OPTS=-Xmx1g
+export PATH=${PATH}:/Users/jacksgong/develop/environment/sdk/platform-tools
+export PATH=${PATH}:/Users/jacksgong/SVN/tools/BUCK/bin
+#export PATH=${PATH}:/Users/jacksgong/develop/environment/ndk
+export PATH="$(brew --prefix homebrew/php/php55)/sbin:$PATH"
+PHP_AUTOCONF="/usr/local/bin/autoconf"
+source ~/.bash_aliases
+
+alias cls='clear'
+alias ll='ls -l'
+alias la='ls -a'
+alias vi='vim'
+alias grep='grep --color=auto'
+alias zshconfig='vi ~/.zshrc'
+alias -s py=vi
+
+alias dropssh='ssh root@104.131.144.68'
+alias b='cd ..'
+
+alias alog='adb logcat -v time | grep -e'
+alias aloge="adb logcat -v time '*:E'"
+alias apkinstall="adb install -r "
+#alias mmuninstall="adb uninstall com.tencent.mm"
+#alias buckinstall="adb install -r ./release-tools/amm_app_preview.apk"
+
+alias gitalias="less /Users/jacksgong/.oh-my-zsh/plugins/git/git.plugin.zsh | grep alias"
+alias gitconfig="vim ~/.gitconfig"
+alias gitignore="vim ~/.gitignore"
+alias cpr="cp -r"
