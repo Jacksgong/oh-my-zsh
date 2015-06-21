@@ -112,3 +112,7 @@ alias gitalias="less ~/.oh-my-zsh/plugins/git/git.plugin.zsh | grep alias"
 alias gitconfig="vim ~/.gitconfig"
 alias gitignore="vim ~/.gitignore"
 alias cpr="cp -r"
+
+#rvm
+#export PATH=$PATH:/usr/local/rvm/bin
+#export PATH=$PATH:/usr/local/rvm/rubies/default/bin
