@@ -81,15 +81,15 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 export CLICOLOR=1
-#export ANDROID_HOME=/Users/jacksgong/develop/environment/sdk
+export ANDROID_HOME=/Users/jacksgong/develop/environment/sdk
 #export ANDROID_NDK_HOME=/Users/jacksgong/develop/environment/ndk
-#export ANT_OPTS=-Xmx1g
-#export PATH=${PATH}:/Users/jacksgong/develop/environment/sdk/platform-tools
-#export PATH=${PATH}:/Users/jacksgong/SVN/tools/BUCK/bin
+export ANT_OPTS=-Xmx1g
+export PATH=${PATH}:/Users/jacksgong/develop/environment/sdk/platform-tools
+export PATH=${PATH}:/Users/jacksgong/SVN/tools/BUCK/bin
 #export PATH=${PATH}:/Users/jacksgong/develop/environment/ndk
-#export PATH="$(brew --prefix homebrew/php/php55)/sbin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php55)/sbin:$PATH"
 PHP_AUTOCONF="/usr/local/bin/autoconf"
-#source ~/.bash_aliases
+source ~/.bash_aliases
 
 alias cls='clear'
 alias ll='ls -l'
@@ -108,7 +108,7 @@ alias apkinstall="adb install -r "
 #alias mmuninstall="adb uninstall com.tencent.mm"
 #alias buckinstall="adb install -r ./release-tools/amm_app_preview.apk"
 
-alias gitalias="less ~/.oh-my-zsh/plugins/git/git.plugin.zsh | grep alias"
+alias gitalias="less /Users/jacksgong/.oh-my-zsh/plugins/git/git.plugin.zsh | grep alias"
 alias gitconfig="vim ~/.gitconfig"
 alias gitignore="vim ~/.gitignore"
 alias cpr="cp -r"
